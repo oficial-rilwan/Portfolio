@@ -77,7 +77,7 @@ export default function Home() {
                   Contact Me
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1DBV4agds9W22bkNtYLSvKdVmZMmWaJoz/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1q_z61wAAHUaQ6pdEVwPSp5a7B38gV_QP/view?usp=drive_link"
                   target="_blank"
                   className="btn_primary fs-4 fw-semibold"
                 >
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
             <div className="row justify-content-center">
               <div className="col-12 col-md-6">
-                <form action="netlify">
+                <form name="contact" action="netlify">
                   <div className="mb-5">
                     <label htmlFor="name" className="mb-3">
                       NAME *
