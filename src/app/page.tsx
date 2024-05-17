@@ -248,7 +248,7 @@ export default function Home() {
             </div>
             <div className="row justify-content-center">
               <div className="col-12 col-md-6">
-                <form name="contact" action="netlify">
+                <form name="contact" method="POST" data-netlify="true">
                   <div className="mb-5">
                     <label htmlFor="name" className="mb-3">
                       NAME *
