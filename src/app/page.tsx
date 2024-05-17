@@ -12,9 +12,9 @@ export default function Home() {
         <div className="container-xl">
           <div className="row align-items-center">
             <div className="col-4">
-              <div className="fs-4">
+              <Link href="/" className="text-white text-decoration-none fs-4">
                 <span className="fw-bold">Rilwan</span>TheDev
-              </div>
+              </Link>
             </div>
             <div className="col-4 text-center">
               <ul
@@ -69,17 +69,17 @@ export default function Home() {
                 Full Stack <br />
                 Developer
               </div>
-              <div className="d-flex gap-5 mt-5">
+              <div className="d-flex flex-wrap gap-5 mt-5">
                 <Link
                   href="#contact"
-                  className="contact_link fs-4 text-white fw-semibold"
+                  className="contact_link fs-4 text-white fw-semibold text-nowrap"
                 >
                   Contact Me
                 </Link>
                 <Link
                   href="https://drive.google.com/file/d/1q_z61wAAHUaQ6pdEVwPSp5a7B38gV_QP/view?usp=drive_link"
                   target="_blank"
-                  className="btn_primary fs-4 fw-semibold"
+                  className="btn_primary fs-4 fw-semibold text-nowrap"
                 >
                   Download CV
                 </Link>
@@ -248,7 +248,12 @@ export default function Home() {
             </div>
             <div className="row justify-content-center">
               <div className="col-12 col-md-6">
-                <form name="contact" method="POST" data-netlify="true">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  action="/mail-sent"
+                >
                   <div className="mb-5">
                     <label htmlFor="name" className="mb-3">
                       NAME *

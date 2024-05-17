@@ -12,6 +12,9 @@ body {
 .text_primary {
   color: #a6bbcc;
 }
+.min-h-90 {
+  min-height: 90vh;
+}
 .btn_primary {
   background-color: #a6bbcc;
   color: #221f1f;
