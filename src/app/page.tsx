@@ -254,6 +254,11 @@ export default function Home() {
                   data-netlify="true"
                   action="/mail-sent"
                 >
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="[Action Required]: New message from rilwanthedev.netlify.app"
+                  />
                   <div className="mb-5">
                     <label htmlFor="name" className="mb-3">
                       NAME *
