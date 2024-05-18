@@ -23,7 +23,7 @@ export default function Home() {
               >
                 <li>
                   <Link
-                    href="#home"
+                    href="/#home"
                     className="text-decoration-none text-white fs-4"
                   >
                     Home
@@ -31,7 +31,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#about"
+                    href="/#about"
                     className="text-decoration-none text-white fs-4"
                   >
                     About
@@ -39,7 +39,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#work"
+                    href="/#work"
                     className="text-decoration-none text-white fs-4"
                   >
                     Work
@@ -241,7 +241,7 @@ export default function Home() {
               <div className="col-12 col-md-10">
                 <div className="fs-4 mb-5">
                   I would love to hear about your project and how i can help.
-                  Please fill in the form, and I&apos;ll ge back to you as soon
+                  Please fill in the form, and I&apos;ll get back to you as soon
                   as possible.
                 </div>
               </div>

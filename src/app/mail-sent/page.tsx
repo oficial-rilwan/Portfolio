@@ -20,7 +20,7 @@ const Page = () => {
               >
                 <li>
                   <Link
-                    href="#home"
+                    href="/#home"
                     className="text-decoration-none text-white fs-4"
                   >
                     Home
@@ -28,7 +28,7 @@ const Page = () => {
                 </li>
                 <li>
                   <Link
-                    href="#about"
+                    href="/#about"
                     className="text-decoration-none text-white fs-4"
                   >
                     About
@@ -36,7 +36,7 @@ const Page = () => {
                 </li>
                 <li>
                   <Link
-                    href="#work"
+                    href="/#work"
                     className="text-decoration-none text-white fs-4"
                   >
                     Work
