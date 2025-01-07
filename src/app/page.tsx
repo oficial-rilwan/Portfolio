@@ -5,6 +5,9 @@ import PROJECTS from "@/static/projects";
 import TECHNOLOGIES from "@/static/technologies";
 import React from "react";
 
+const date = new Date();
+const year = date.getFullYear();
+
 export default function Home() {
   return (
     <React.Fragment>
@@ -22,26 +25,17 @@ export default function Home() {
                 className="d-none d-md-flex gap-5 align-items-center justify-content-center p-0 m-0"
               >
                 <li>
-                  <Link
-                    href="/#home"
-                    className="text-decoration-none text-white fs-4"
-                  >
+                  <Link href="/#home" className="text-decoration-none text-white fs-4">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/#about"
-                    className="text-decoration-none text-white fs-4"
-                  >
+                  <Link href="/#about" className="text-decoration-none text-white fs-4">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/#work"
-                    className="text-decoration-none text-white fs-4"
-                  >
+                  <Link href="/#work" className="text-decoration-none text-white fs-4">
                     Work
                   </Link>
                 </li>
@@ -49,12 +43,7 @@ export default function Home() {
             </div>
             <div className="col-4 text-end">
               <Link target="_blank" href="https://github.com/oficial-rilwan">
-                <Image
-                  src={"./akar-icons_github-fill.svg"}
-                  alt="GitHub"
-                  width={68}
-                  height={63}
-                />
+                <Image src={"./akar-icons_github-fill.svg"} alt="GitHub" width={68} height={63} />
               </Link>
             </div>
           </div>
@@ -70,14 +59,11 @@ export default function Home() {
                 Developer
               </div>
               <div className="d-flex flex-wrap gap-5 mt-5">
-                <Link
-                  href="#contact"
-                  className="contact_link fs-4 text-white fw-semibold text-nowrap"
-                >
+                <Link href="#contact" className="contact_link fs-4 text-white fw-semibold text-nowrap">
                   Contact Me
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1q_z61wAAHUaQ6pdEVwPSp5a7B38gV_QP/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1KELwjDjck3eYyIByeOtmaeVZcvwvYocQ/view?usp=sharing"
                   target="_blank"
                   className="btn_primary fs-4 fw-semibold text-nowrap"
                 >
@@ -108,13 +94,10 @@ export default function Home() {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-10">
                 <div className="fs-4 mb-5">
-                  My name is Rilwan Aribidesi, a solution-driven Full-stack
-                  Engineer with over 3 years of working experience building
-                  customer-focused products and services. Designed and developed
-                  multiple web and mobile apps across multiple APIs, third-party
-                  integrations and databases. Thrive in working in a fast-paced,
-                  high-tech environment with cross-functional teams using agile
-                  methodology.
+                  My name is Rilwan Aribidesi, a solution-driven Full-stack Engineer with over 3 years of working
+                  experience building customer-focused products and services. Designed and developed multiple web and
+                  mobile apps across multiple APIs, third-party integrations and databases. Thrive in working in a
+                  fast-paced, high-tech environment with cross-functional teams using agile methodology.
                 </div>
                 <div className="fs-2 fw-semibold mb-3">Technologies</div>
                 <div className="d-flex flex-wrap gap-5 align-items-center">
@@ -149,11 +132,9 @@ export default function Home() {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-10">
                 <div className="fs-4 mb-4">
-                  As a Full-Stack Web Developer, I have extensive experience in
-                  developing, deploying, and maintaining dynamic web
-                  applications. My portfolio highlights projects that
-                  demonstrate my expertise in both frontend and backend
-                  technologies.
+                  As a Full-Stack Web Developer, I have extensive experience in developing, deploying, and maintaining
+                  dynamic web applications. My portfolio highlights projects that demonstrate my expertise in both
+                  frontend and backend technologies.
                 </div>
               </div>
             </div>
@@ -161,16 +142,8 @@ export default function Home() {
               {PROJECTS.map((item) => {
                 return (
                   <div className="col-12 col-md-6 mb-5" key={item?.name}>
-                    <div
-                      className="gap-3 px-5 pt-5 rounded mb-3"
-                      style={{ background: "#3b35a9" }}
-                    >
-                      <Link
-                        target="_blank"
-                        href={
-                          Array.isArray(item.link) ? item.link[0] : item.link
-                        }
-                      >
+                    <div className="gap-3 px-5 pt-5 rounded mb-3" style={{ background: "#3b35a9" }}>
+                      <Link target="_blank" href={Array.isArray(item.link) ? item.link[0] : item.link}>
                         <Image
                           width={0}
                           height={0}
@@ -183,9 +156,7 @@ export default function Home() {
                     </div>
                     <div className="px-4">
                       <div className="fs-4 text-uppercase">{item?.name}</div>
-                      <small className="d-block text-light mb-3">
-                        {item?.description}
-                      </small>
+                      <small className="d-block text-light mb-3">{item?.description}</small>
                       {Array.isArray(item.link) ? (
                         <div className="">
                           <div className="d-flex gap-3 mb-3">
@@ -196,9 +167,7 @@ export default function Home() {
                               style={{ maxWidth: 200 }}
                               href={item.link[0]}
                             >
-                              <small className="text-light">
-                                {item?.link[0]}
-                              </small>
+                              <small className="text-light">{item?.link[0]}</small>
                             </Link>
                           </div>
                           <div className="d-flex gap-3">
@@ -209,9 +178,7 @@ export default function Home() {
                               style={{ maxWidth: 200 }}
                               href={item.link[1]}
                             >
-                              <small className="text-light">
-                                {item.link[1]}
-                              </small>
+                              <small className="text-light">{item.link[1]}</small>
                             </Link>
                           </div>
                         </div>
@@ -240,20 +207,14 @@ export default function Home() {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-10">
                 <div className="fs-4 mb-5">
-                  I would love to hear about your project and how i can help.
-                  Please fill in the form, and I&apos;ll get back to you as soon
-                  as possible.
+                  I would love to hear about your project and how i can help. Please fill in the form, and I&apos;ll get
+                  back to you as soon as possible.
                 </div>
               </div>
             </div>
             <div className="row justify-content-center">
               <div className="col-12 col-md-6">
-                <form
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  action="/mail-sent"
-                >
+                <form name="contact" method="POST" data-netlify="true" action="/mail-sent">
                   <input
                     type="hidden"
                     name="subject"
@@ -263,13 +224,7 @@ export default function Home() {
                     <label htmlFor="name" className="mb-3">
                       NAME *
                     </label>
-                    <input
-                      type="text"
-                      required
-                      name="name"
-                      className="form-input"
-                      title="Please enter your name"
-                    />
+                    <input type="text" required name="name" className="form-input" title="Please enter your name" />
                   </div>
                   <div className="mb-5">
                     <label htmlFor="email" className="mb-3">
@@ -296,10 +251,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="d-flex justify-content-center">
-                    <button
-                      className="submit-btn fw-semibold fs-4"
-                      type="submit"
-                    >
+                    <button className="submit-btn fw-semibold fs-4" type="submit">
                       SEND MESSAGE
                     </button>
                   </div>
@@ -310,9 +262,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="border-top py-4">
-        <div className="text-center">
-          © {new Date().getFullYear()}. Rilwan Aribidesi. All rights reserved
-        </div>
+        <div className="text-center">© {year}. Rilwan Aribidesi. All rights reserved</div>
       </footer>
     </React.Fragment>
   );

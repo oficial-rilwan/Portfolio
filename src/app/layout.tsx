@@ -10,10 +10,7 @@ const inter = Poppins({
 
 export const metadata: Metadata = {
   title: "Rilwan Aribidesi - Portfolio",
-  description: `Solution-driven Full-stack Engineer with over 3 years of working experience building customer-focused products
-and services. Designed and developed multiple web and mobile apps across multiple APIs, third-party integrations
-and databases. Thrive in working in a fast-paced, high-tech environment with cross-functional teams using agile
-methodology.`,
+  description: `Solution-driven Full-stack Engineer with over 3 years of working experience building customer-focused products and services. Designed and developed multiple web and mobile apps across multiple APIs, third-party integrations and databases. Thrive in working in a fast-paced, high-tech environment with cross-functional teams using agile methodology.`,
   keywords: [
     "frontend developer",
     "frontend engineer",
